@@ -6,7 +6,7 @@ Give a proper backend to your Vue.js app.
 
 > [!Tip]
 
-> This quick start guide focuses exclusively on the **front-end**. To ensure the functionality of this code, your CASE backend must be [installed and served](../install.md) at `http://localhost:4000`.
+> This quick start guide focuses exclusively on the **front-end**. To ensure the functionality of this code, your CASE backend must be [installed and served](install.md) at `http://localhost:4000`.
 
 # 1. Create a Vue app
 
@@ -31,7 +31,7 @@ npm i @casejs/case-client
 
 # 3. Use it in your app
 
-In that example we are using a Pokemon entity [created previously](../entities.md). Replace it by your own entity. This example uses TypeScript, you can remove the typing to have plain JS.
+In that example we are using a Pokemon entity [created previously](entities.md). Replace it by your own entity. This example uses TypeScript, you can remove the typing to have plain JS.
 
 ```js
 <script lang="ts">

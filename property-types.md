@@ -21,8 +21,8 @@ A simple text field.
 ![Text property type: field and yield](./assets/images/prop-text.svg ':class=is-hidden-tablet')
 
   <div class="is-hidden-desktop"> 
-      <img src="./assets/images/input-text.svg" />
-      <img src="./assets/images/display-text.svg" />
+    ![text input](./assets/images/input-text.svg)
+    ![text yield](./assets/images/display-text.svg)
   </div>
 </div>
 
@@ -40,11 +40,11 @@ A numerical value.
 ```
 
 <div class="show-result">
-  <img class="is-hidden-tablet" src="./assets/images/prop-number.svg" />
+![Number property type: field and yield](./assets/images/prop-number.svg ':class=is-hidden-tablet')
 
   <div class="is-hidden-desktop"> 
-      <img src="./assets/images/input-number.svg" />
-      <img src="./assets/images/display-number.svg" />
+    ![number input](./assets/images/input-number.svg)
+    ![number yield](./assets/images/display-number.svg)
   </div>
 </div>
 
@@ -62,11 +62,11 @@ An URL that links to an external page.
 ```
 
 <div class="show-result">
-  <img class="is-hidden-tablet" src="./assets/images/prop-link.svg" />
+![link property type: field and yield](./assets/images/prop-link.svg ':class=is-hidden-tablet')
 
   <div class="is-hidden-desktop"> 
-      <img src="./assets/images/input-link.svg" />
-      <img src="./assets/images/display-link.svg" />
+    ![link input](./assets/images/input-link.svg)
+    ![link yield](./assets/images/display-link.svg)
   </div>
 </div>
 
@@ -88,11 +88,11 @@ Choose from any currency.
 ```
 
 <div class="show-result">
-  <img class="is-hidden-tablet" src="./assets/images/prop-currency.svg" />
+![currency property type: field and yield](./assets/images/prop-currency.svg ':class=is-hidden-tablet')
 
   <div class="is-hidden-desktop"> 
-      <img src="./assets/images/input-currency.svg" />
-      <img src="./assets/images/display-currency.svg" />
+    ![currency input](./assets/images/input-currency.svg)
+    ![currency yield](./assets/images/display-currency.svg)
   </div>
 </div>
 
@@ -116,11 +116,11 @@ Basic date field.
 ```
 
 <div class="show-result">
-  <img class="is-hidden-tablet" src="./assets/images/prop-date.svg" />
+![date property type: field and yield](./assets/images/prop-date.svg ':class=is-hidden-tablet')
 
   <div class="is-hidden-desktop"> 
-      <img src="./assets/images/input-date.svg" />
-      <img src="./assets/images/display-date.svg" />
+    ![date input](./assets/images/input-date.svg)
+    ![date yield](./assets/images/display-date.svg)
   </div>
 </div>
 
@@ -138,11 +138,11 @@ Textarea field for medium size texts.
 ```
 
 <div class="show-result">
-  <img class="is-hidden-tablet" src="./assets/images/prop-textarea.svg" />
+![textarea property type: field and yield](./assets/images/prop-textarea.svg ':class=is-hidden-tablet')
 
   <div class="is-hidden-desktop"> 
-      <img src="./assets/images/input-textarea.svg" />
-      <img src="./assets/images/display-textarea.svg" />
+    ![textarea input](./assets/images/input-textarea.svg)
+    ![textarea yield](./assets/images/display-textarea.svg)
   </div>
 </div>
 
@@ -160,11 +160,11 @@ Classic email input.
 ```
 
 <div class="show-result">
-  <img class="is-hidden-tablet" src="./assets/images/prop-email.svg" />
+![email property type: field and yield](./assets/images/prop-email.svg ':class=is-hidden-tablet')
 
   <div class="is-hidden-desktop"> 
-      <img src="./assets/images/input-email.svg" />
-      <img src="./assets/images/display-email.svg" />
+    ![email input](./assets/images/input-email.svg)
+    ![email yield](./assets/images/display-email.svg)
   </div>
 </div>
 
@@ -183,11 +183,11 @@ For any field with a "true or false" value.
 ```
 
 <div class="show-result">
-  <img class="is-hidden-tablet" src="./assets/images/prop-boolean.svg" />
+![boolean property type: field and yield](./assets/images/prop-boolean.svg ':class=is-hidden-tablet')
 
   <div class="is-hidden-desktop"> 
-      <img src="./assets/images/input-boolean.svg" />
-      <img src="./assets/images/display-boolean.svg" />
+    ![boolean input](./assets/images/input-boolean.svg)
+    ![boolean yield](./assets/images/display-boolean.svg)
   </div>
 </div>
 
@@ -211,11 +211,11 @@ owner: Owner
 ```
 
 <div class="show-result">
-  <img class="is-hidden-tablet" src="./assets/images/prop-relation.svg" />
+![relation property type: field and yield](./assets/images/prop-relation.svg ':class=is-hidden-tablet')
 
   <div class="is-hidden-desktop"> 
-      <img src="./assets/images/input-relation.svg" />
-      <img src="./assets/images/display-relation.svg" />
+    ![relation input](./assets/images/input-relation.svg)
+    ![relation yield](./assets/images/display-relation.svg)
   </div>
 </div>
 
@@ -248,11 +248,11 @@ Hidden password field.
   password: string
 ```
 
-<img  src="./assets/images/prop-pw.svg" />
+![password property type field](./assets/images/prop-pw.svg ':class=is-hidden-tablet')
 
 > [!ATTENTION]
 > You should never ever store a password on clear text.
-> You can use the [@BeforeInsert hook](custom-logic.md#beforeinsert) to encrypt it.
+> You can use the [@BeforeInsert hook](hooks.md#beforeinsert) to encrypt it.
 > To prevent selecting it, use [property options](properties.md?id=options) as above
 
 ---
@@ -269,11 +269,11 @@ File upload input.
 ```
 
 <div class="show-result">
-  <img class="is-hidden-tablet" src="./assets/images/prop-file.svg" />
+![file property type: field and yield](./assets/images/prop-file.svg ':class=is-hidden-tablet')
 
   <div class="is-hidden-desktop"> 
-      <img src="./assets/images/input-file.svg" />
-      <img src="./assets/images/display-file.svg" />
+    ![file input](./assets/images/input-file.svg)
+    ![file yield](./assets/images/display-file.svg)
   </div>
 </div>
 
@@ -291,11 +291,11 @@ Same as file but for images.
 ```
 
 <div class="show-result">
-  <img class="is-hidden-tablet" src="./assets/images/prop-image.svg" />
+![image property type: field and yield](./assets/images/prop-image.svg ':class=is-hidden-tablet')
 
   <div class="is-hidden-desktop"> 
-      <img src="./assets/images/input-image.svg" />
-      <img src="./assets/images/display-image.svg" />
+    ![image input](./assets/images/input-image.svg)
+    ![image yield](./assets/images/display-image.svg)
   </div>
 </div>
 
@@ -337,22 +337,22 @@ export enum ProjectStatus {
 ##### Display: 'label'
 
 <div class="show-result">
-  <img class="is-hidden-tablet" src="./assets/images/prop-enum-label.svg" />
+![enum-label property type: field and yield](./assets/images/prop-enum-label.svg ':class=is-hidden-tablet')
 
   <div class="is-hidden-desktop"> 
-      <img src="./assets/images/input-enum-label.svg" />
-      <img src="./assets/images/display-enum-label.svg" />
+    ![enum-label input](./assets/images/input-enum-label.svg)
+    ![enum-label yield](./assets/images/display-enum-label.svg)
   </div>
 </div>
 
 ##### Display: 'progress-bar'
 
 <div class="show-result">
-  <img class="is-hidden-tablet" src="./assets/images/prop-enum-pb.svg" />
+![enum-pb property type: field and yield](./assets/images/prop-enum-pb.svg ':class=is-hidden-tablet')
 
   <div class="is-hidden-desktop"> 
-      <img src="./assets/images/input-enum-pb.svg" />
-      <img src="./assets/images/display-enum-pb.svg" />
+    ![enum-pb input](./assets/images/input-enum-pb.svg)
+    ![enum-pb yield](./assets/images/display-enum-pb.svg)
   </div>
 </div>
 
