@@ -1,3 +1,7 @@
+---
+id: dummy-data
+---
+
 # Dummy data
 
 Having high quality dummy data is crucial to replicate the experience of your future users as much as possible.

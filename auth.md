@@ -1,3 +1,7 @@
+---
+id: auth
+---
+
 # Auth
 
 CASE comes with a built-in authentication system based on [JSON Web Tokens](https://jwt.io/).

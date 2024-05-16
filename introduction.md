@@ -1,42 +1,50 @@
-# CASE Documentation 👋
+---
+id: introduction
+title: Introduction
+slug: /
+---
+
+# Manifest Documentation 👋
 
 <span class="is-ib is-bordered">
 ![CASE App](./assets/images/cat-list.png ':class=is-bordered')
 </span>
 
-## What is CASE ?
+## What is Manifest ?
 
-CASE is a Typescript lightweight **BaaS (Backend As A Service)** requiring minimal coding.
+Manifest is the simplest **BaaS (Backend As A Service)** you will find.
 
-It provides a complete backend to your client app without the hassle that comes with it.
+It provides a complete backend to your client app without the hassle that comes with it. It actually fits into **a single YAML file** that generates a complete backend.
+
+Here is an example of a complete Manifest app:
+
+```yaml
+# manifest/backend.yml
+name: Healthcare application
+
+entities:
+  👩🏾‍⚕️ Doctor:
+    properties:
+      - fullName
+      - avatar
+      - { name: price, type: money, options: { currency: EUR } }
+    belongsTo:
+      - City
+
+  🤒 Patient:
+    properties:
+      - fullName
+      - { name: birthdate, type: date }
+    belongsTo:
+      - Doctor
+
+  🌍 City:
+    properties:
+      - name
+```
 
 ## Main features
 
 - ⚡ **Instant backend with DB, REST API and Admin panel** without any configuration
 - 🧠 **Smart SDK** to import in your favorite JS front-end
-- 🛠️ **Essential features** like Auth, Storage, Validation and Hooks
-
-## A complete backend without leaving your IDE
-
-**You know how to code, so go ahead and do it**. You don't need to be coddled with drag-and-drop options and visual builders.
-
-With CASE, you can quickly add a backend to your app while **staying within your development environment**. This allows you to work in your language, maintain consistent versioning, and moreover have a coherent development experience.
-
-## The anatomy of a CASE backend
-
-The entire backend fits into the following folder structure:
-
-```
-.
-├──── db # SQLite database
-├──── dist # Compiled output
-├──── entities # folder that holds custom entities
-├──── node_modules
-├──── public # public folder for storage and assets
-├ .env
-├ .gitignore
-├ nodemon.json
-├ README.md
-├ package.json
-└ ts-config.json
-```
+- 🛠️ **Essential features** for your backend

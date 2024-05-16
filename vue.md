@@ -1,4 +1,6 @@
-[< Connect with the JS SDK](connect.md)
+---
+id: vue
+---
 
 # Quick start with Vue
 

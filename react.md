@@ -1,4 +1,6 @@
-[< Connect with the JS SDK](connect.md)
+---
+id: react
+---
 
 # Quick start with React
 

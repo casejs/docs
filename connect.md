@@ -1,3 +1,7 @@
+---
+id: connect
+---
+
 # Connect to your backend with the JS SDK
 
 Use **CASE JS SDK** to fetch and manipulate your data from your JS client.

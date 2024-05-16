@@ -1,3 +1,7 @@
+---
+id: properties
+---
+
 # Add properties to an entity
 
 Properties are key-value pairs inside entities. They are usually mapped to database columns.

@@ -1,4 +1,6 @@
-[< Connect with the JS SDK](connect.md)
+---
+id: angular
+---
 
 # Quick start with Angular
 

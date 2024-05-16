@@ -1,3 +1,7 @@
+---
+id: going-to-production
+---
+
 # Going to production
 
 CASE is made to be quickly deployed to production.

@@ -1,3 +1,7 @@
+---
+id: property-types
+---
+
 # Property types
 
 CASE works with it's own set of types that corresponds to different types of data often used in CRUD apps.
