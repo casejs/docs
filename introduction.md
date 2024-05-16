@@ -1,7 +1,7 @@
 # CASE Documentation 👋
 
 <span class="is-ib is-bordered">
-![CASE App](../assets/images/cat-list.png ':class=is-bordered')
+![CASE App](./assets/images/cat-list.png ':class=is-bordered')
 </span>
 
 ## What is CASE ?

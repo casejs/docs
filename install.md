@@ -20,10 +20,10 @@ npm start
 ```
 
 🎉 **Your backend is ready !**
-<br>
-<br>You can now:
-<br> - See your **Admin panel** at http://localhost:4000
-<br> - Use your **REST API** at http://localhost:4000/api
+<br/>
+<br/>You can now:
+<br/> - See your **Admin panel** at http://localhost:4000
+<br/> - Use your **REST API** at http://localhost:4000/api
 
 > [!Tip]
 >

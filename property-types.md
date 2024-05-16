@@ -18,11 +18,11 @@ A simple text field.
 ```
 
 <div class="show-result">
-  <img class="is-hidden-tablet" src="../assets/images/prop-text.svg">
+![Text property type: field and yield](./assets/images/prop-text.svg ':class=is-hidden-tablet')
 
   <div class="is-hidden-desktop"> 
-      <img src="../assets/images/input-text.svg">
-      <img src="../assets/images/display-text.svg">
+      <img src="./assets/images/input-text.svg" />
+      <img src="./assets/images/display-text.svg" />
   </div>
 </div>
 
@@ -40,11 +40,11 @@ A numerical value.
 ```
 
 <div class="show-result">
-  <img class="is-hidden-tablet" src="../assets/images/prop-number.svg">
+  <img class="is-hidden-tablet" src="./assets/images/prop-number.svg" />
 
   <div class="is-hidden-desktop"> 
-      <img src="../assets/images/input-number.svg">
-      <img src="../assets/images/display-number.svg">
+      <img src="./assets/images/input-number.svg" />
+      <img src="./assets/images/display-number.svg" />
   </div>
 </div>
 
@@ -62,11 +62,11 @@ An URL that links to an external page.
 ```
 
 <div class="show-result">
-  <img class="is-hidden-tablet" src="../assets/images/prop-link.svg">
+  <img class="is-hidden-tablet" src="./assets/images/prop-link.svg" />
 
   <div class="is-hidden-desktop"> 
-      <img src="../assets/images/input-link.svg">
-      <img src="../assets/images/display-link.svg">
+      <img src="./assets/images/input-link.svg" />
+      <img src="./assets/images/display-link.svg" />
   </div>
 </div>
 
@@ -88,11 +88,11 @@ Choose from any currency.
 ```
 
 <div class="show-result">
-  <img class="is-hidden-tablet" src="../assets/images/prop-currency.svg">
+  <img class="is-hidden-tablet" src="./assets/images/prop-currency.svg" />
 
   <div class="is-hidden-desktop"> 
-      <img src="../assets/images/input-currency.svg">
-      <img src="../assets/images/display-currency.svg">
+      <img src="./assets/images/input-currency.svg" />
+      <img src="./assets/images/display-currency.svg" />
   </div>
 </div>
 
@@ -116,11 +116,11 @@ Basic date field.
 ```
 
 <div class="show-result">
-  <img class="is-hidden-tablet" src="../assets/images/prop-date.svg">
+  <img class="is-hidden-tablet" src="./assets/images/prop-date.svg" />
 
   <div class="is-hidden-desktop"> 
-      <img src="../assets/images/input-date.svg">
-      <img src="../assets/images/display-date.svg">
+      <img src="./assets/images/input-date.svg" />
+      <img src="./assets/images/display-date.svg" />
   </div>
 </div>
 
@@ -138,11 +138,11 @@ Textarea field for medium size texts.
 ```
 
 <div class="show-result">
-  <img class="is-hidden-tablet" src="../assets/images/prop-textarea.svg">
+  <img class="is-hidden-tablet" src="./assets/images/prop-textarea.svg" />
 
   <div class="is-hidden-desktop"> 
-      <img src="../assets/images/input-textarea.svg">
-      <img src="../assets/images/display-textarea.svg">
+      <img src="./assets/images/input-textarea.svg" />
+      <img src="./assets/images/display-textarea.svg" />
   </div>
 </div>
 
@@ -160,11 +160,11 @@ Classic email input.
 ```
 
 <div class="show-result">
-  <img class="is-hidden-tablet" src="../assets/images/prop-email.svg">
+  <img class="is-hidden-tablet" src="./assets/images/prop-email.svg" />
 
   <div class="is-hidden-desktop"> 
-      <img src="../assets/images/input-email.svg">
-      <img src="../assets/images/display-email.svg">
+      <img src="./assets/images/input-email.svg" />
+      <img src="./assets/images/display-email.svg" />
   </div>
 </div>
 
@@ -183,11 +183,11 @@ For any field with a "true or false" value.
 ```
 
 <div class="show-result">
-  <img class="is-hidden-tablet" src="../assets/images/prop-boolean.svg">
+  <img class="is-hidden-tablet" src="./assets/images/prop-boolean.svg" />
 
   <div class="is-hidden-desktop"> 
-      <img src="../assets/images/input-boolean.svg">
-      <img src="../assets/images/display-boolean.svg">
+      <img src="./assets/images/input-boolean.svg" />
+      <img src="./assets/images/display-boolean.svg" />
   </div>
 </div>
 
@@ -211,26 +211,26 @@ owner: Owner
 ```
 
 <div class="show-result">
-  <img class="is-hidden-tablet" src="../assets/images/prop-relation.svg">
+  <img class="is-hidden-tablet" src="./assets/images/prop-relation.svg" />
 
   <div class="is-hidden-desktop"> 
-      <img src="../assets/images/input-relation.svg">
-      <img src="../assets/images/display-relation.svg">
+      <img src="./assets/images/input-relation.svg" />
+      <img src="./assets/images/display-relation.svg" />
   </div>
 </div>
 
-| Option                                        | Default | Type    | Description                                                                                                                                               |
-| --------------------------------------------- | ------- | ------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **entity<span style="color: red;">\*</span>** | -       | string  | The Entity class of the parent                                                                                                                            |
-| **eager**                                     | false   | boolean | If true, the relation will be loaded automatically. Otherwise you need to [explicitly request the relation](connect.md?id=crud-operations) in the client. |
+| Option                     | Default | Type    | Description                                                                                                                                               |
+| -------------------------- | ------- | ------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **entity<span >\*</span>** | -       | string  | The Entity class of the parent                                                                                                                            |
+| **eager**                  | false   | boolean | If true, the relation will be loaded automatically. Otherwise you need to [explicitly request the relation](connect.md?id=crud-operations) in the client. |
 
-<br>
+<br/>
 > [!NOTE]
 >
 > - CASE Relations only work in the **Children => Parent** direction on many-to-one relationships.
 > - When you use **cascade delete** and delete the _Owner_ record, it will also delete all his or her _Cat_ records
 
-<br>
+<br/>
 
 ---
 
@@ -248,7 +248,7 @@ Hidden password field.
   password: string
 ```
 
-<img  src="../assets/images/prop-pw.svg">
+<img  src="./assets/images/prop-pw.svg" />
 
 > [!ATTENTION]
 > You should never ever store a password on clear text.
@@ -269,11 +269,11 @@ File upload input.
 ```
 
 <div class="show-result">
-  <img class="is-hidden-tablet" src="../assets/images/prop-file.svg">
+  <img class="is-hidden-tablet" src="./assets/images/prop-file.svg" />
 
   <div class="is-hidden-desktop"> 
-      <img src="../assets/images/input-file.svg">
-      <img src="../assets/images/display-file.svg">
+      <img src="./assets/images/input-file.svg" />
+      <img src="./assets/images/display-file.svg" />
   </div>
 </div>
 
@@ -291,11 +291,11 @@ Same as file but for images.
 ```
 
 <div class="show-result">
-  <img class="is-hidden-tablet" src="../assets/images/prop-image.svg">
+  <img class="is-hidden-tablet" src="./assets/images/prop-image.svg" />
 
   <div class="is-hidden-desktop"> 
-      <img src="../assets/images/input-image.svg">
-      <img src="../assets/images/display-image.svg">
+      <img src="./assets/images/input-image.svg" />
+      <img src="./assets/images/display-image.svg" />
   </div>
 </div>
 
@@ -337,22 +337,22 @@ export enum ProjectStatus {
 ##### Display: 'label'
 
 <div class="show-result">
-  <img class="is-hidden-tablet" src="../assets/images/prop-enum-label.svg">
+  <img class="is-hidden-tablet" src="./assets/images/prop-enum-label.svg" />
 
   <div class="is-hidden-desktop"> 
-      <img src="../assets/images/input-enum-label.svg">
-      <img src="../assets/images/display-enum-label.svg">
+      <img src="./assets/images/input-enum-label.svg" />
+      <img src="./assets/images/display-enum-label.svg" />
   </div>
 </div>
 
 ##### Display: 'progress-bar'
 
 <div class="show-result">
-  <img class="is-hidden-tablet" src="../assets/images/prop-enum-pb.svg">
+  <img class="is-hidden-tablet" src="./assets/images/prop-enum-pb.svg" />
 
   <div class="is-hidden-desktop"> 
-      <img src="../assets/images/input-enum-pb.svg">
-      <img src="../assets/images/display-enum-pb.svg">
+      <img src="./assets/images/input-enum-pb.svg" />
+      <img src="./assets/images/display-enum-pb.svg" />
   </div>
 </div>
 
