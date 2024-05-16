@@ -1,5 +1,6 @@
 ---
 id: entities
+title: Create an entity
 ---
 
 # Create an entity
@@ -7,6 +8,8 @@ id: entities
 An entity is an object often linked to a real world concept like users, customers, videos etc.
 
 All entities are located in the `backend.yml` file under the **entities** property.
+
+## Syntax
 
 Let's see a simple example:
 
@@ -24,8 +27,6 @@ entities:
 ```
 
 This file will generate the **Cat** and **Dog** entity both with a `name` property. You can now add your own pets trough the admin panel !
-
-## Seed dummy data
 
 Dummy data is crucial for app development and testing. You can generate dummy data for all your entities with the simple command:
 
@@ -53,8 +54,6 @@ entities:
       - number
       - email
 ```
-
-### Available params
 
 | Option           | Default                    | Type   | Description                                                                                               |
 | ---------------- | -------------------------- | ------ | --------------------------------------------------------------------------------------------------------- |
