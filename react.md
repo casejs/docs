@@ -6,9 +6,11 @@ id: react
 
 Give a proper backend to your React app.
 
-> [!Tip]
+:::warning
 
-> This quick start guide focuses exclusively on the **front-end**. To ensure the functionality of this code, your CASE backend must be [installed and served](install.md) at `http://localhost:4000`.
+This quick start guide focuses exclusively on the **frontend**. To ensure the functionality of this code, your Manifest backend must be [up and running](install.md) at `http://localhost:1111`.
+
+:::
 
 # 1. Create a React app
 
@@ -27,7 +29,7 @@ npm start
 Install the JS SDK from the root of your React app.
 
 ```
-npm i @casejs/case-client
+npm i @manifest/sdk
 ```
 
 # 3. Use it in your app
@@ -36,6 +38,8 @@ In that example we are using a Pokemon entity [created previously](entities.md).
 
 ```js
 // App.tsx
+import Manifest from '@manifest/sdk';
+import { useEffect, useState } from "react";
 
 function App() {
   interface Pokemon {
@@ -47,10 +51,10 @@ function App() {
 
   useEffect(() => {
     // Init SDK.
-    const cs = new CaseClient();
+    const manifest = new Manifest();
 
     // Fetch the list of Pokemons.
-    cs.from("pokemon")
+    manifest.from("pokemon")
       .find<Pokemon>()
       .then((res) => {
         setPokemon(res);
@@ -71,7 +75,3 @@ export default App;
 ```
 
 Checkout the [SDK doc](connect.md) to see more usages of the SDK: CRUD operations, file upload, authentication,
-
-> [!Tip]
-
-> Otherwise you can start from our [React + CASE example repository](https://github.com/casejs/front-end-starters)

@@ -6,9 +6,11 @@ id: vue
 
 Give a proper backend to your Vue.js app.
 
-> [!Tip]
+:::warning
 
-> This quick start guide focuses exclusively on the **front-end**. To ensure the functionality of this code, your CASE backend must be [installed and served](install.md) at `http://localhost:4000`.
+This quick start guide focuses exclusively on the **frontend**. To ensure the functionality of this code, your Manifest backend must be [up and running](install.md) at `http://localhost:1111`.
+
+:::
 
 # 1. Create a Vue app
 
@@ -28,7 +30,7 @@ npm run dev
 Install the JS SDK from the root of your Vue app.
 
 ```
-npm i @casejs/case-client
+npm i @manifest/sdk
 ```
 
 # 3. Use it in your app
@@ -37,7 +39,7 @@ In that example we are using a Pokemon entity [created previously](entities.md).
 
 ```js
 <script lang="ts">
-import CaseClient from "@casejs/case-client";
+import Manifest from "@manifest/sdk";
 
 interface Pokemon {
   id: number;
@@ -59,10 +61,10 @@ export default {
     async fetchPokemon() {
 
       // Init SDK
-      const cs = new CaseClient();
+      const manifest = new Manifest();
 
       // Fetch Pokemons from the backend.
-      cs.from("pokemon")
+      manifest.from("pokemon")
         .find<Pokemon>()
         .then((res) => {
           // Store the response in the "pokemons" array
@@ -82,8 +84,4 @@ export default {
 
 ```
 
-Checkout the [SDK doc](connect.md) to see more usages of the SDK: CRUD operations, file upload, authentication,
-
-> [!Tip]
-
-> Otherwise you can start from our [Vue + CASE example repository](https://github.com/casejs/front-end-starters)
+Checkout the [SDK doc](connect.md) to see more usages of the SDK.,

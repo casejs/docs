@@ -6,9 +6,11 @@ id: svelte
 
 Give a proper backend to your Svelte app.
 
-> [!Tip]
+:::warning
 
-> This quick start guide focuses exclusively on the **front-end**. To ensure the functionality of this code, your CASE backend must be [installed and served](install.md) at `http://localhost:4000`.
+This quick start guide focuses exclusively on the **frontend**. To ensure the functionality of this code, your Manifest backend must be [up and running](install.md) at `http://localhost:1111`.
+
+:::
 
 # 1. Create a Svelte app
 
@@ -28,7 +30,7 @@ npm run dev -- --open
 Install the JS SDK from the root of your Svelte app.
 
 ```
-npm i @casejs/case-client
+npm i @manifest/sdk
 ```
 
 # 3. Use it in your app
@@ -39,9 +41,7 @@ In that example we are using a Pokemon entity [created previously](entities.md).
 // src/routes/+page.svelte
 
 <script lang="ts">
-  import "bulma/css/bulma.min.css";
-
-  import CaseClient from "@casejs/case-client";
+  import Manifest from "manifest/sdk"
   import { onMount } from "svelte";
 
   interface Pokemon {
@@ -54,7 +54,7 @@ In that example we are using a Pokemon entity [created previously](entities.md).
   let pokemons: Pokemon[] = [];
 
   onMount(async () => {
-    const cs = new CaseClient();
+    const manifest = new Manifest();
     pokemons = await cs.from("pokemon").find<Pokemon>();
   });
 </script>
@@ -70,7 +70,3 @@ In that example we are using a Pokemon entity [created previously](entities.md).
 ```
 
 Checkout the [SDK doc](connect.md) to see more usages of the SDK: CRUD operations, file upload, authentication,
-
-> [!Tip]
-
-> Otherwise you can start from our [Svelte + CASE example repository](https://github.com/casejs/front-end-starters)

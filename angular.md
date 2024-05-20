@@ -6,9 +6,11 @@ id: angular
 
 Give a proper backend to your Angular app.
 
-> [!Tip]
+:::warning
 
-> This quick start guide focuses exclusively on the **front-end**. To ensure the functionality of this code, your CASE backend must be [installed and served](install.md) at `http://localhost:4000`.
+This quick start guide focuses exclusively on the **frontend**. To ensure the functionality of this code, your Manifest backend must be [up and running](install.md) at `http://localhost:1111`.
+
+:::
 
 # 1. Create a Angular app
 
@@ -27,7 +29,7 @@ ng serve
 Install the JS SDK from the root of your Angular app.
 
 ```
-npm i @casejs/case-client
+npm i @manifest/sdk
 ```
 
 # 3. Use it in your app
@@ -38,7 +40,7 @@ In that example we are using a Pokemon entity [created previously](entities.md).
 // app.component.ts
 
 import { Component } from '@angular/core'
-import CaseClient from '@casejs/case-client'
+import Manifest from '@manifest/sdk'
 
 @Component({
   selector: 'app-root',
@@ -46,15 +48,14 @@ import CaseClient from '@casejs/case-client'
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'angular'
   pokemons: { id: number, name: string }[] = []
 
   async ngOnInit() {
     // Init SDK.
-    const cs = new CaseClient()
+    const manifest = new Manifest()
 
     // Fetch the list of Pokemons.
-    this.pokemons = await cs.from('pokemon').find()
+    this.pokemons = await manifest.from('pokemon').find()
   }
 }
 ```
@@ -63,12 +64,8 @@ And in the template:
 
 ```html
 <ul>
-  <li *ngFor="let pokemon of pokemons">{{ pokemon.name}}</li>
+  <li *ngFor="let pokemon of pokemons">{{ pokemon.name }}</li>
 </ul>
 ```
 
 Checkout the [SDK doc](connect.md) to see more usages of the SDK: CRUD operations, file upload, authentication,
-
-> [!Tip]
-
-> Otherwise you can start from our [Angular + CASE example repository](https://github.com/casejs/front-end-starters)
