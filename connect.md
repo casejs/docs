@@ -89,21 +89,6 @@ When filtering, you have access to the following operators: `=`, `>`, `>=`, `<`,
 
 :::
 
-## Authenticate
-
-You can perform authentication through several entities. [Read more about CASE auth](auth.md)
-
-```js
-// Login as a user with email and password.
-await manifest.login('users', 'admin@manifest.build', 'manifest')
-
-// Sign up as a new author.
-await manifest.signup('authors', 'william@shakespeare.com', 'hamlet')
-
-// Logout
-await manifest.logout()
-```
-
 ## Get started with your favorite front-end framework
 
 See the following quick start guides to integrate CASE with popular front-end frameworks:
