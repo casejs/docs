@@ -35,7 +35,7 @@ npm i @manifest/sdk
 
 # 3. Use it in your app
 
-In that example we are using a Pokemon entity [created previously](entities.md). Replace it by your own entity. This example uses TypeScript, you can remove the typing to have plain JS.
+In this example, we are using a Pokémon entity [created previously](entities.md). Replace it by your own entity. This example uses TypeScript, you can remove the typing to have plain JS.
 
 ```js
 <script lang="ts">

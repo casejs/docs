@@ -6,7 +6,7 @@ id: connect
 
 Use the **Manifest JS SDK** to fetch and manipulate your data from your JS client.
 
-The SDK can be integrated in any frontend stack app like React, Vue, Angular....
+The SDK can be integrated into any frontend stack app like React, Vue, Angular....
 
 ## Install
 
@@ -39,7 +39,7 @@ const cats = await manifest.from('cats').find({ page: 1, perPage: 10 })
 // Typed.
 const cats: Cat[] = await manifest.from('cats').find<Cat>()
 
-// Get a filtered the list of cats.
+// Get a filtered list of cats.
 const cats = await manifest
   .from('cats')
   .where('breed = siamese')

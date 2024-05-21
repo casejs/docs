@@ -34,7 +34,7 @@ npm i @manifest/sdk
 
 # 3. Use it in your app
 
-In that example we are using a Pokemon entity [created previously](entities.md). Replace it by your own entity.
+In this example, we are using a Pokémon entity [created previously](entities.md). Replace it by your own entity.
 
 ```js
 // app.component.ts

@@ -16,7 +16,7 @@ This quick start guide focuses exclusively on the **frontend**. To ensure the fu
 
 If you already have a Svelte app running, you can skip this step.
 
-There is several ways to do that. In our example we use [SvelteKit](https://kit.svelte.dev/) to generate a pre-configured Svelte app, you . You can replace `my-client` by the name of your front-end app.
+There are several ways to do that. In our example we use [SvelteKit](https://kit.svelte.dev/) to generate a pre-configured Svelte app, you . You can replace `my-client` by the name of your front-end app.
 
 ```
 npm create svelte@latest my-client
@@ -35,7 +35,7 @@ npm i @manifest/sdk
 
 # 3. Use it in your app
 
-In that example we are using a Pokemon entity [created previously](entities.md). Replace it by your own entity. This example uses TypeScript, you can remove the typing to have plain JS.
+In this example, we are using a Pokémon entity [created previously](entities.md). Replace it by your own entity. This example uses TypeScript, you can remove the typing to have plain JS.
 
 ```js
 // src/routes/+page.svelte
