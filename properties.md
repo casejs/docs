@@ -115,9 +115,11 @@ Password field.
 - { name: password, type: password }
 ```
 
-:::danger
+:::danger Caution
 You should never ever store a password on clear text.
 :::
+
+
 
 ### Choice
 
