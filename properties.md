@@ -46,9 +46,6 @@ A simple string.
 - firstName
 ```
 
-
----
-
 ### Textarea
 
 Textarea field for medium-size texts.
@@ -66,9 +63,6 @@ A numerical value.
 - { name: age, type: number }
 ```
 
-
----
-
 ### Link
 
 An URL that links to an external page.
@@ -76,9 +70,6 @@ An URL that links to an external page.
 ```yaml
 - { name: website, type: link }
 ```
-
-
----
 
 ### Money
 
@@ -88,14 +79,11 @@ A money field with a currency.
 - { name: price, type: money, options: { currency: 'EUR' } }
 ```
 
-
 ##### Parameters
 
 | Option       | Default | Type   | Description                                                                                      |
 | ------------ | ------- | ------ | ------------------------------------------------------------------------------------------------ |
 | **currency** | _USD_   | string | [ISO 4217 currency code](https://en.wikipedia.org/wiki/ISO_4217#List_of_ISO_4217_currency_codes) |
-
----
 
 ### Date
 
@@ -105,17 +93,11 @@ Basic date field.
 - { name: startDate, type: date }
 ```
 
-
----
-
 ### Email
 
 ```yaml
 - { name: email, type: email }
 ```
-
-
----
 
 ### Boolean
 
@@ -124,9 +106,6 @@ For any field with a "true or false" value.
 ```yaml
 - { name: isActive, type: boolean }
 ```
-
-
----
 
 ### Password
 
@@ -137,9 +116,7 @@ Password field.
 ```
 
 :::danger
-
 You should never ever store a password on clear text.
-
 :::
 
 ### Choice
