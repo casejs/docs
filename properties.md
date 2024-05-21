@@ -31,7 +31,7 @@ You can pass arguments to the `@Prop()` decorator:
 | **hidden**  | `false`  | boolean    | If the property should be hidden in the API response                    |
 | **options** | {}       | Object     | Specific options depending on **type**                                  |
 
-## Property types {#property-types}
+## Property types
 
 Each property has a **type** that represents real-world usages. Some of them have specific options.
 
