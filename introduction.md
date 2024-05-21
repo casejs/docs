@@ -4,13 +4,7 @@ title: Introduction
 slug: /
 ---
 
-# Manifest Documentation 👋
-
-<span class="is-ib is-bordered">
-![CASE App](./assets/images/cat-list.png ':class=is-bordered')
-</span>
-
-## What is Manifest ?
+# Welcome to Manifest Documentation 👋
 
 Manifest is the simplest **BaaS (Backend As A Service)** you will find.
 
