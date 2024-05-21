@@ -26,6 +26,6 @@ entities:
       - bio
 ```
 
-- The property **name** is the name of your app
+- The **name** property is the name of your app
 - The **entities** property is an object that expects the list of your entities
 - And yes, you can use emojis 😎

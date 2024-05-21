@@ -33,7 +33,7 @@ You can pass arguments to the `@Prop()` decorator:
 
 ## Property types {#property-types}
 
-Each property has a **type** that represent real-world usages. Some of them have specific options.
+Each property has a **type** that represents real-world usages. Some of them have specific options.
 
 ### String
 
@@ -59,7 +59,7 @@ A simple string.
 
 ### Textarea
 
-Textarea field for medium size texts.
+Textarea field for medium-size texts.
 
 ```yaml
 - { name: description, type: text }

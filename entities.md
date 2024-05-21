@@ -26,7 +26,7 @@ entities:
       - name
 ```
 
-This file will generate the **Cat** and **Dog** entity both with a `name` property. You can now add your own pets trough the admin panel !
+This file will generate the **Cat** and **Dog** entity both with a `name` property. You can now add your own pets through the admin panel!
 
 Dummy data is crucial for app development and testing. You can generate dummy data for all your entities with the simple command:
 
@@ -57,7 +57,7 @@ entities:
 
 | Option           | Default                    | Type   | Description                                                                                               |
 | ---------------- | -------------------------- | ------ | --------------------------------------------------------------------------------------------------------- |
-| **nameSingular** | _singular lower case name_ | string | he singular lowercase name of your entity. Used widely on the admin panel.                                |
+| **nameSingular** | _singular lower case name_ | string | The singular lowercase name of your entity. Used widely on the admin panel.                                |
 | **namePlural**   | _plural lower case name_   | string | The plural lowercase name of your entity. Used widely on the admin panel. Default: plural lowercase name. |
 | **slug**         | _plural dasherized name_   | string | The kebab-case slug of the entity that will define API endpoints.                                         |
 | **mainProp**     | _first string field_       | string | Identifier prop. Used widely on the admin panel                                                           |
