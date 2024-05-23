@@ -21,8 +21,11 @@ Use the SDK directly in your favorite frontend:
 ```js
 import Manifest from '@mnfst/sdk'
 
-// Initialize client in default port (localhost:1111).
+// Initialize client with default backend URL: http://localhost:1111.
 const manifest = new Manifest()
+
+// Initialize client with custom URL.
+const manifest = new Manifest('https://example.com/api')
 ```
 
 ## CRUD operations
