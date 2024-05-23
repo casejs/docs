@@ -23,7 +23,7 @@ entities:
 
 ## Property params
 
-You can pass arguments to the `@Prop()` decorator:
+You can pass arguments using the long syntax:
 
 | Option      | Default  | Type       | Description                                                             |
 | ----------- | -------- | ---------- | ----------------------------------------------------------------------- |

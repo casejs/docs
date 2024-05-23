@@ -30,12 +30,12 @@ npm run dev -- --open
 Install the JS SDK from the root of your Svelte app.
 
 ```
-npm i @manifest/sdk
+npm i @mnfst/sdk
 ```
 
 # 3. Use it in your app
 
-In that example we are using a Pokemon entity [created previously](entities.md). Replace it by your own entity. This example uses TypeScript, you can remove the typing to have plain JS.
+In that example we are using a Cat entity [created previously](entities.md). Replace it by your own entity. This example uses TypeScript, you can remove the typing to have plain JS.
 
 ```js
 // src/routes/+page.svelte
@@ -44,29 +44,29 @@ In that example we are using a Pokemon entity [created previously](entities.md).
   import Manifest from "manifest/sdk"
   import { onMount } from "svelte";
 
-  interface Pokemon {
+  interface Cat {
     id: number;
     name: string;
     type: string;
     image: string;
   }
 
-  let pokemons: Pokemon[] = [];
+  let cats: Cat[] = [];
 
   onMount(async () => {
     const manifest = new Manifest();
-    pokemons = await cs.from("pokemon").find<Pokemon>();
+    cats = await cs.from("cat").find<Cat>();
   });
 </script>
 
 <div class="main">
   <ul>
-    {#each pokemons as pokemon}
-      <li>{pokemon.name}</li>
+    {#each cats as cat}
+      <li>{cat.name}</li>
     {/each}
   </ul>
 </div>
 
 ```
 
-Checkout the [SDK doc](connect.md) to see more usages of the SDK: CRUD operations, file upload, authentication,
+Checkout the [SDK doc](javascript-sdk.md) to see more usages of the SDK: CRUD operations, file upload, authentication,

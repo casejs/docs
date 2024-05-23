@@ -6,7 +6,7 @@ id: install
 
 ## Prerequisites
 
-- [NodeJS](https://nodejs.org/en/) (**v16.14.0** or higher). The recommended version is **18.x**.
+- [NodeJS](https://nodejs.org/en/) (**18.x**).
 - ⚠ A computer that runs Linux or macOS (Windows compatibility on the way !)
 
 ## Install Manifest

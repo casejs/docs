@@ -29,43 +29,43 @@ npm start
 Install the JS SDK from the root of your React app.
 
 ```
-npm i @manifest/sdk
+npm i @mnfst/sdk
 ```
 
 # 3. Use it in your app
 
-In that example we are using a Pokemon entity [created previously](entities.md). Replace it by your own entity. This example uses TypeScript, you can remove the typing to have plain JS.
+In that example we are using a Cat entity [created previously](entities.md). Replace it by your own entity. This example uses TypeScript, you can remove the typing to have plain JS.
 
 ```js
 // App.tsx
-import Manifest from '@manifest/sdk';
+import Manifest from '@mnfst/sdk';
 import { useEffect, useState } from "react";
 
 function App() {
-  interface Pokemon {
+  interface Cat {
     id: number;
     name: string;
   }
 
-  const [pokemons, setPokemon] = useState<Pokemon[]>([]);
+  const [cats, setCat] = useState<Cat[]>([]);
 
   useEffect(() => {
     // Init SDK.
     const manifest = new Manifest();
 
-    // Fetch the list of Pokemons.
-    manifest.from("pokemon")
-      .find<Pokemon>()
+    // Fetch the list of Cats.
+    manifest.from("cat")
+      .find<Cat>()
       .then((res) => {
-        setPokemon(res);
+        setCat(res);
       });
   }, []);
 
-  // Display a list of Pokemons.
+  // Display a list of Cats.
   return (
     <ul>
-      {pokemons.map((pokemon) => (
-        <li>{pokemon.name}</li>
+      {cats.map((cat) => (
+        <li>{cat.name}</li>
       ))}
     </ul>
   );
@@ -74,4 +74,4 @@ function App() {
 export default App;
 ```
 
-Checkout the [SDK doc](connect.md) to see more usages of the SDK: CRUD operations, file upload, authentication,
+Checkout the [SDK doc](javascript-sdk.md) to see more usages of the SDK: CRUD operations, file upload, authentication,

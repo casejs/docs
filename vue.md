@@ -30,18 +30,18 @@ npm run dev
 Install the JS SDK from the root of your Vue app.
 
 ```
-npm i @manifest/sdk
+npm i @mnfst/sdk
 ```
 
 # 3. Use it in your app
 
-In that example we are using a Pokemon entity [created previously](entities.md). Replace it by your own entity. This example uses TypeScript, you can remove the typing to have plain JS.
+In that example we are using a Cat entity [created previously](entities.md). Replace it by your own entity. This example uses TypeScript, you can remove the typing to have plain JS.
 
 ```js
 <script lang="ts">
-import Manifest from "@manifest/sdk";
+import Manifest from "@mnfst/sdk";
 
-interface Pokemon {
+interface Cat {
   id: number;
   name: string;
   type: string;
@@ -51,24 +51,24 @@ interface Pokemon {
 export default {
   data() {
     return {
-      pokemons: [] as Pokemon[],
+      cats: [] as Cat[],
     };
   },
   mounted() {
-    this.fetchPokemon();
+    this.fetchCat();
   },
   methods: {
-    async fetchPokemon() {
+    async fetchCat() {
 
       // Init SDK
       const manifest = new Manifest();
 
-      // Fetch Pokemons from the backend.
-      manifest.from("pokemon")
-        .find<Pokemon>()
+      // Fetch Cats from the backend.
+      manifest.from("cat")
+        .find<Cat>()
         .then((res) => {
-          // Store the response in the "pokemons" array
-          this.pokemons = res;
+          // Store the response in the "cats" array
+          this.cats = res;
         });
     },
   },
@@ -77,11 +77,11 @@ export default {
 
 <template>
     <ul>
-        <li v-for="pokemon of pokemons">{{ pokemon.name}}</li>
+        <li v-for="cat of cats">{{ cat.name }}</li>
     </ul>
 </template>
 
 
 ```
 
-Checkout the [SDK doc](connect.md) to see more usages of the SDK.,
+Checkout the [SDK doc](javascript-sdk.md) to see more usages of the SDK.,
