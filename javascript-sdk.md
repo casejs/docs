@@ -39,7 +39,7 @@ const cats = await manifest.from('cats').find({ page: 1, perPage: 10 })
 // Typed.
 const cats: Cat[] = await manifest.from('cats').find<Cat>()
 
-// Get a filtered the list of cats.
+// Get a filtered list of cats.
 const cats = await manifest
   .from('cats')
   .where('breed = siamese')

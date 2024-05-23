@@ -16,7 +16,7 @@ This quick start guide focuses exclusively on the **frontend**. To ensure the fu
 
 If you already have a React app, you can skip this step.
 
-There is several ways to do that. We will use the easiest one: **create-react-app**. You can replace `my-client` by the name of your front-end app.
+There are several ways to do that. We will use the easiest one: **create-react-app**. You can replace `my-client` by the name of your front-end app.
 
 ```
 npx create-react-app my-client
