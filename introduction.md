@@ -39,6 +39,6 @@ entities:
 
 ## Main features
 
-- ⚡ **Instant backend with DB, REST API and Admin panel** without any configuration
-- 🧠 **Smart SDK** to import in your favorite JS front-end
-- 🛠️ **Essential features** for your backend
+- ⚡ **Instant complete backend** with zero configuration
+- 🧠 **Super-easy syntax** to build with ease
+- 🛠️ **Plug and play** with your favorite frontend
