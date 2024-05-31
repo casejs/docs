@@ -30,25 +30,6 @@ properties:
     - User
 ```
 
-Then you can call your cats and your users with their relations:
-
-```js
-// Using Manifest JS SDK
-const cats = await manifest.from('cats').with(['owner']).find()
-
-/* 
-Output: 
-[{
-    id: 1
-    name: "Felix",
-    owner: {
-        id: 23,
-        name: "Anna"
-    }
-}] 
-*/
-```
-
 As for the [properties](properties.md), there is a short and a long syntax. The long syntax allows you pass params to it:
 
 ```yaml

@@ -11,7 +11,7 @@ id: install
 
 ## Install Manifest
 
-Run the following on your terminal:
+Run the following on your terminal from the **root of your project**:
 
 ```bash
 npx add-manifest
@@ -29,7 +29,7 @@ You can now:
 <br/> - See your **Admin panel** at http://localhost:1111 using the email `admin@manifest.build` and the password `admin`
 <br/> - Use your **REST API** at http://localhost:1111/api
 
-:::Tip
+:::tip
 
 If you already have a frontend app, you can run the `npx add-manifest` command from your **project root** to include it in your repo.
 

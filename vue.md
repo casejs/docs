@@ -64,11 +64,11 @@ export default {
       const manifest = new Manifest();
 
       // Fetch Cats from the backend.
-      manifest.from("cat")
+      manifest.from("cats")
         .find<Cat>()
         .then((res) => {
           // Store the response in the "cats" array
-          this.cats = res;
+          this.cats = res.data;
         });
     },
   },

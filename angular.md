@@ -55,7 +55,8 @@ export class AppComponent {
     const manifest = new Manifest()
 
     // Fetch the list of Cats.
-    this.cats = await manifest.from('cat').find()
+    const result = await manifest.from('cats').find()
+    this.cats = result.data
   }
 }
 ```

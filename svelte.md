@@ -55,7 +55,8 @@ In that example we are using a Cat entity [created previously](entities.md). Rep
 
   onMount(async () => {
     const manifest = new Manifest();
-    cats = await cs.from("cat").find<Cat>();
+    const result = await cs.from("cats").find<Cat>();
+    const cats = result.data;
   });
 </script>
 

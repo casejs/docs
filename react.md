@@ -54,10 +54,10 @@ function App() {
     const manifest = new Manifest();
 
     // Fetch the list of Cats.
-    manifest.from("cat")
+    manifest.from("cats")
       .find<Cat>()
       .then((res) => {
-        setCat(res);
+        setCat(res.data);
       });
   }, []);
 
