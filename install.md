@@ -26,7 +26,7 @@ npm run manifest
 ```
 
 You can now:
-<br/> - See your **Admin panel** at http://localhost:1111 using the email `admin@manifest.build` and the password `manifest`
+<br/> - See your **Admin panel** at http://localhost:1111 using the email `admin@manifest.build` and the password `admin`
 <br/> - Use your **REST API** at http://localhost:1111/api
 
 :::Tip
