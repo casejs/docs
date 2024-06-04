@@ -116,7 +116,7 @@ Password field.
 ```
 
 :::danger Caution
-You should never ever store a password on clear text.
+Passwords should never be stored as clear text.
 :::
 
 
