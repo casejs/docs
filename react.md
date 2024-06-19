@@ -24,7 +24,7 @@ cd my-client
 npm start
 ```
 
-# 2. Install CASE SDK
+# 2. Install Manifest SDK
 
 Install the JS SDK from the root of your React app.
 

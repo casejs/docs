@@ -24,7 +24,7 @@ cd my-client
 ng serve
 ```
 
-# 2. Install CASE SDK
+# 2. Install Manifest SDK
 
 Install the JS SDK from the root of your Angular app.
 

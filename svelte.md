@@ -25,7 +25,7 @@ npm install
 npm run dev -- --open
 ```
 
-# 2. Install CASE SDK
+# 2. Install Manifest SDK
 
 Install the JS SDK from the root of your Svelte app.
 
