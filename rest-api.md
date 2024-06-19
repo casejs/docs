@@ -18,7 +18,7 @@ Gets a list of items from an entity.
 
 You can filter by [property](properties.md) to refine the list of items. Use suffix to pass logic to it:
 
-| Option     | Description           | Example                    |
+| Suffix     | Description           | Example                    |
 | ---------- | --------------------- | -------------------------- |
 | **\_eq**   | equals                | `isActive_eq=true`         |
 | **\_gt**   | greater than          | `birthdate_gt=2020-01-01 ` |
@@ -62,16 +62,21 @@ All list requests are paginated by default. Just use the `page` parameter to cho
 }
 ```
 
+| Param       | Description                      | Example      |
+| ----------- | -------------------------------- | ------------ |
+| **page**    | The number of the page requested | `page=3`     |
+| **perPage** | The number of items of each page | `perPage=40` |
+
 ### Order
 
 Order your list by a defined property.
 
-| Option      | Description                                | Example       |
+| Param       | Description                                | Example       |
 | ----------- | ------------------------------------------ | ------------- |
 | **orderBy** | The name of property you want to order by. | `orderBy=age` |
 | **order**   | Ascending 'ASC' or Descending 'DESC'       | `order=DESC`  |
 
-## GET /slug/:id
+## GET /slug/\:id
 
 Get a single item.
 
@@ -88,7 +93,7 @@ Provide a Request Payload in JSON:
 }
 ```
 
-## PUT /slug/:id
+## PUT /slug/\:id
 
 Update an item.
 
@@ -101,6 +106,6 @@ Provide a Request Payload in JSON:
 }
 ```
 
-## DELETE /slug/:id
+## DELETE /slug/\:id
 
 Delete an item.
