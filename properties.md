@@ -93,6 +93,15 @@ Basic date field.
 - { name: startDate, type: date }
 ```
 
+### Timestamp
+
+Timestamp field.
+
+```yaml
+- { name: acquiredAt, type: timestamp }
+```
+
+
 ### Email
 
 ```yaml
@@ -119,8 +128,6 @@ Password field.
 Passwords should never be stored as clear text.
 :::
 
-
-
 ### Choice
 
 A given choice of options.
@@ -135,7 +142,6 @@ A given choice of options.
     options: { values: [draft, submitted, published], sequential: true }
   }
 ```
-
 
 ##### Parameters
 
