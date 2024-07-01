@@ -30,7 +30,9 @@ You can filter by [property](properties.md) to refine the list of items. Use suf
 
 By default the results are ordered by `id` in a `DESC` order and thus shows the new ones first.
 
-### Relation
+### Relations
+
+#### Load relations
 
 You can specify the relations you want to load. [Eager relationships](relations.md#relation-params) are loaded by default.
 
@@ -43,6 +45,15 @@ GET http://localhost:1111/api/dynamic/invoices?relation=project,customer
 
 // Nested relations.
 GET http://localhost:111/api/dynamic/city?relations=region,region.country
+```
+
+#### Filter by relations
+
+Once the relation is loaded, you can also filter by its properties using the same filters suffixes:
+
+```
+GET http://localhost:1111/api/dynamic/cats?relations=owner&owner.id_eq=1
+GET http://localhost:1111/api/dynamic/cats?relations=owner&owner.name_eq=Jorge
 ```
 
 ### Pagination

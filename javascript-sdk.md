@@ -19,13 +19,13 @@ npm i @mnfst/sdk
 Use the SDK directly in your favorite frontend:
 
 ```js
-import Manifest from '@mnfst/sdk'
+import Manifest from "@mnfst/sdk";
 
 // Initialize client with default backend URL: http://localhost:1111.
-const manifest = new Manifest()
+const manifest = new Manifest();
 
 // Initialize client with custom URL.
-const manifest = new Manifest('https://example.com/api')
+const manifest = new Manifest("https://example.com/api");
 ```
 
 ## CRUD operations
@@ -65,8 +65,9 @@ const cats = await manifest
 // Filter by relations.
 const cats = await manifest
   .from('cats')
-  .where(`owner in 1,2,3`)
-  .andWhere(`store = ${storeId}`)
+  .with(['owner', 'store']) // Load relation first if not eager.
+  .where(`owner.id in 1,2,3`)
+  .andWhere(`store.name = CatLand`)
   .find()
 
 // Create a cat.
